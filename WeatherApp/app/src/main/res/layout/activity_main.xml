@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.weathertest.MainActivity" >
+
+    <EditText
+        android:id="@+id/cityNameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_hint"
+        android:padding="@dimen/value_15"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/getWeatherBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityNameEt"
+        android:text="@string/btn_text" />
+
+    <ListView
+        android:id="@+id/weatherList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/getWeatherBtn" >
+    </ListView>
+
+</RelativeLayout>
